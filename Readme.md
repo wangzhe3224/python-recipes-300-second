@@ -4,6 +4,22 @@
 
 **适合 Python 初学，想要进阶的朋友。**
 
+包含但不限于：
+
+- 基本数据结构和算法
+- 字符串和文本
+- 文件和IO
+- 面向对象
+- 元编程
+- 网络编程
+- 并发编程
+- 函数编程
+- numpy
+- pandas
+- matplotlib
+
+这个系列虽然是速食，但是我为大家提供了比较清晰的归类，方便大家有计划的学习和强化。
+
 Cover: https://docs.google.com/presentation/d/1OFyHyXF5t2qq12mNskPv4SGJMZBaRAOyHiUl7XMq3HA/edit?usp=sharing
 
 ## 目录
@@ -17,3 +33,8 @@ Cover: https://docs.google.com/presentation/d/1OFyHyXF5t2qq12mNskPv4SGJMZBaRAOyH
 - [B站 - 泛程序员](https://www.bilibili.com/video/BV1wY411q7dn/?vd_source=da65fd0f11a3d90e543b48cf26e65fb7)
 - [小红书 - 泛程序员](https://www.xiaohongshu.com/user/profile/5d093f22000000001201fe8a)
 - [油管 - 泛程序员](https://www.youtube.com/watch?v=Jn92wKNF5kc&list=PL5ETbHWvsj-HMT5pFw6p6t_tPLI17l0y3)
+
+## 参考
+
+- 《Python Cookbook》
+- 更多参考
