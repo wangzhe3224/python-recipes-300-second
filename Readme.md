@@ -25,7 +25,7 @@ Cover: https://docs.google.com/presentation/d/1OFyHyXF5t2qq12mNskPv4SGJMZBaRAOyH
 ## 目录
 
 - 数据结构和算法
-  - [解包](1-数据结构和算法/1-1-解包.ipynb)
+  - [解包](content/1-数据结构和算法/1-1-解包.ipynb)
 
 ## 视频讲解
 
