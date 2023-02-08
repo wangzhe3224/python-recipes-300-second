@@ -27,6 +27,7 @@ Cover: https://docs.google.com/presentation/d/1OFyHyXF5t2qq12mNskPv4SGJMZBaRAOyH
 - 数据结构和算法
   - [解包](content/1-数据结构和算法/1-1-解包.ipynb)
   - [堆和最大小N个元素](content/1-数据结构和算法/1-2-%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8FN%E4%B8%AA%E5%85%83%E7%B4%A0.ipynb)
+  - [切片 - Slice](content/1-数据结构和算法/1-3-切片.ipynb)
 
 ## 视频讲解
 
