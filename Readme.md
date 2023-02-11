@@ -30,6 +30,8 @@ Cover: https://docs.google.com/presentation/d/1OFyHyXF5t2qq12mNskPv4SGJMZBaRAOyH
   - [切片 - Slice](content/1-数据结构和算法/1-3-切片.ipynb)
 - 字符串和文本
   - [多重分割字符串](content/2-字符串和文本/2-1-split-string-multi-deli.ipynb)
+- 数字、时间、日期
+  - [精确小数计算](content/3-数字-日期-时间/3-1-accurate-decimal.ipynb)
 
 ## 视频讲解
 
