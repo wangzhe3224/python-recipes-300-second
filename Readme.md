@@ -34,6 +34,7 @@ Cover: https://docs.google.com/presentation/d/1OFyHyXF5t2qq12mNskPv4SGJMZBaRAOyH
   - [精确小数计算](content/3-数字-日期-时间/3-1-accurate-decimal.ipynb)
 - 面向对象编程
   - [带约束的类属性](content/oo/type_checked_attri.py)
+  - [接口的实现](content/oo/interface.py)
 
 ## 视频讲解
 
