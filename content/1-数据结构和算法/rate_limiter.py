@@ -13,6 +13,23 @@ class TokenBucket:
         self._bucket = token
 
     def handle(self, message):
+        """
+        Case 1:
+        
+        every 1 seconds, not more than 1 msg.
+
+        token = 1
+        time_unit = 1
+        token / time_unit = 1
+        bucket = token = 1
+        
+        time, time pass, bucket, last check
+        0, 1, 0
+        5, 5, 1, 5, pass, 0
+        5.1, 0.1, 0.1, 5.1, stop
+        5.2, 0.1, 0.2, 5.2, stop
+        6.1, 1.1, 0.3, 6.1, pass
+        """
         current = time.time()
         time_passed = current - self._last_check
         self._last_check = current
@@ -29,7 +46,6 @@ class TokenBucket:
         else:
             self._bucket -= 1
             self.forward(message)
-            
 
 
 class LeakyBucket:
@@ -79,18 +95,17 @@ class FixedWindow:
 
 if __name__ == "__main__":
 
-    # def forward(packet):
-    #     print("Packet Forwarded: " + str(packet))
+    def forward(packet):
+        print("Packet Forwarded: " + str(packet))
 
 
-    # def drop(packet):
-    #     print("Packet Dropped: " + str(packet))
+    def drop(packet):
+        print("Packet Dropped: " + str(packet))
 
 
-    # throttle = TokenBucket(1, 1, forward, drop)
+    throttle = TokenBucket(1, 1, forward, drop)
 
     # packet = 0
-
     # while True:
     #     time.sleep(0.2)
     #     throttle.handle(packet)

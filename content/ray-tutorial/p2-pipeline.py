@@ -47,8 +47,17 @@ class WorkerWithPipelining:
 
             if work_item is None:
                 break
-
+            
+            # Before computation, trigger the RPC to get next work item ( IO operation )
             self.work_item_ref = self.work_queue.get_work_item.remote()
 
             # Do work while we are fetching the next work item.
-            self.process(work_item)
+            self.process(work_item)  # CPU operations
+
+work_queue = WorkQueue.remote()
+worker_without_pipelining = WorkerWithoutPipelining.remote(work_queue)
+ray.get(worker_without_pipelining.run.remote())
+
+work_queue = WorkQueue.remote()
+worker_with_pipelining = WorkerWithPipelining.remote(work_queue)
+ray.get(worker_with_pipelining.run.remote())
